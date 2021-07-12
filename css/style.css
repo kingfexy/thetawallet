@@ -14,6 +14,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: #1c243b;
     font-family: AlwynNew,Helvetica Neue,-apple-system,sans-serif;
+    
 }
 #root .main-logo {
    width: 250px;
@@ -128,4 +129,22 @@ button {
 .GradientButton__title {
     color: #fff;
     font-size: 20px;
+}
+
+/* Admin */
+#root h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    top: 40px;
+}
+.bar-img {
+    width: 25%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
